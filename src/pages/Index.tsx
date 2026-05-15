@@ -8,132 +8,226 @@ const FIGHTER2_IMG = 'https://cdn.poehali.dev/projects/21e0c350-313f-4193-b546-6
 const fighters = [
   {
     id: 1,
-    name: 'Алексей Громов',
-    nickname: '"Торнадо"',
-    weightClass: 'Тяжёлый вес',
-    record: { wins: 18, losses: 2, draws: 1 },
-    nationality: '🇷🇺 Россия',
-    age: 29,
-    height: '188 см',
-    weight: '120 кг',
-    reach: '198 см',
+    name: 'Ислам Махачев',
+    nickname: '"The Machine"',
+    weightClass: 'Лёгкий вес',
+    record: { wins: 27, losses: 1, draws: 0 },
+    nationality: '🇷🇺 Дагестан, Россия',
+    age: 32,
+    height: '175 см',
+    weight: '70 кг',
+    reach: '178 см',
     stance: 'Ортодокс',
-    bio: 'Алексей Громов — один из самых перспективных тяжеловесов России. Мастер спорта по вольной борьбе, чёрный пояс по бразильскому джиу-джитсу. Начал карьеру в ММА в 2017 году, быстро завоевал репутацию бойца с сокрушительным нокаутирующим ударом.',
-    wins_by: { ko: 11, sub: 4, dec: 3 },
-    losses_by: { ko: 1, sub: 0, dec: 1 },
+    bio: 'Ислам Махачев — действующий чемпион UFC в лёгком весе и один из лучших бойцов мира в фунт-за-фунт рейтинге. Уроженец Махачкалы, Дагестан. Тренируется в команде AKA под руководством Хавьера Мендеса. Обладает исключительным борцовским фундаментом и гроссмейстерским грэпплингом. Друг и партнёр по тренировкам Хабиба Нурмагомедова. Завоевал пояс UFC в 2022 году, победив Чарлза Оливейру.',
+    wins_by: { ko: 4, sub: 12, dec: 11 },
+    losses_by: { ko: 0, sub: 0, dec: 1 },
     img: FIGHTER1_IMG,
     rank: 1,
-    status: 'Действующий чемпион',
+    status: 'Чемпион UFC · Лёгкий вес',
     videos: [
-      { title: 'Бой vs Петров — Нокаут в 1 раунде', date: '15 Мар 2024', duration: '0:47' },
-      { title: 'Бой vs Ким — Доминирование в стойке', date: '12 Ноя 2023', duration: '15:00' },
-      { title: 'Лучшие моменты сезона 2023', date: '30 Дек 2023', duration: '4:22' },
+      { title: 'Islam Makhachev vs Charles Oliveira — UFC 280', date: '22 Окт 2022', duration: '10:00' },
+      { title: 'Islam Makhachev vs Alexander Volkanovski — UFC 284', date: '11 Фев 2023', duration: '25:00' },
+      { title: 'Лучшие моменты карьеры Ислама Махачева', date: '2024', duration: '8:14' },
     ],
   },
   {
     id: 2,
-    name: 'Максим Волков',
-    nickname: '"Волк"',
-    weightClass: 'Полутяжёлый вес',
-    record: { wins: 14, losses: 3, draws: 0 },
-    nationality: '🇷🇺 Россия',
-    age: 31,
-    height: '183 см',
-    weight: '93 кг',
-    reach: '192 см',
-    stance: 'Саутпо',
-    bio: 'Максим Волков — боец с агрессивным стилем и великолепной техникой ударов. Неоднократный чемпион России по кикбоксингу, прошёл путь от любительских турниров до профессиональных клеток.',
-    wins_by: { ko: 8, sub: 3, dec: 3 },
-    losses_by: { ko: 2, sub: 0, dec: 1 },
+    name: 'Хабиб Нурмагомедов',
+    nickname: '"The Eagle"',
+    weightClass: 'Лёгкий вес',
+    record: { wins: 29, losses: 0, draws: 0 },
+    nationality: '🇷🇺 Дагестан, Россия',
+    age: 35,
+    height: '178 см',
+    weight: '70 кг',
+    reach: '178 см',
+    stance: 'Ортодокс',
+    bio: 'Хабиб Нурмагомедов — величайший чемпион UFC в лёгком весе, завершивший карьеру непобеждённым (29-0). Уроженец Кировского аула, Дагестан. Борцовская легенда, доминировавшая над соперниками за счёт невероятного давления и грэпплинга. Победил Конора МакГрегора, Джастина Гэтжи и Дасти Порье. В октябре 2020 года объявил о завершении карьеры после смерти отца.',
+    wins_by: { ko: 8, sub: 11, dec: 10 },
+    losses_by: { ko: 0, sub: 0, dec: 0 },
     img: FIGHTER2_IMG,
-    rank: 2,
-    status: 'Претендент №2',
+    rank: 0,
+    status: 'Легенда UFC · Непобеждённый',
     videos: [
-      { title: 'Захватывающий бой vs Симонов', date: '22 Янв 2024', duration: '7:32' },
-      { title: 'Высокий кик — нокаут года', date: '05 Сен 2023', duration: '0:32' },
+      { title: 'Khabib vs Conor McGregor — UFC 229', date: '6 Окт 2018', duration: '16:05' },
+      { title: 'Khabib vs Justin Gaethje — UFC 254', date: '24 Окт 2020', duration: '10:10' },
+      { title: 'Все победы Хабиба в UFC', date: '2020', duration: '45:00' },
     ],
   },
   {
     id: 3,
-    name: 'Дмитрий Крылов',
-    nickname: '"Орёл"',
-    weightClass: 'Средний вес',
-    record: { wins: 22, losses: 1, draws: 2 },
-    nationality: '🇷🇺 Россия',
-    age: 34,
-    height: '180 см',
-    weight: '84 кг',
-    reach: '185 см',
+    name: 'Пётр Ян',
+    nickname: '"No Mercy"',
+    weightClass: 'Лёгчайший вес',
+    record: { wins: 17, losses: 5, draws: 0 },
+    nationality: '🇷🇺 Новосибирск, Россия',
+    age: 31,
+    height: '170 см',
+    weight: '61 кг',
+    reach: '170 см',
     stance: 'Ортодокс',
-    bio: 'Ветеран ММА с 10-летним опытом. Дмитрий известен своей невероятной выносливостью и стратегическим подходом к бою. Победитель престижных турниров Европы и Азии.',
-    wins_by: { ko: 7, sub: 9, dec: 6 },
-    losses_by: { ko: 0, sub: 1, dec: 0 },
+    bio: 'Пётр Ян — один из лучших бойцов лёгчайшего веса в мире. Уроженец Новосибирска. Экс-чемпион UFC в лёгчайшем весе (2020–2021). Известен разрушительными руками и хладнокровием в бою. Бывший интерим-чемпион. Боец мирового класса с победами над Алджамэйном Стерлингом, Коди Гарбрандтом и Хосе Альдо.',
+    wins_by: { ko: 10, sub: 2, dec: 5 },
+    losses_by: { ko: 1, sub: 1, dec: 3 },
     img: FIGHTER1_IMG,
     rank: 3,
-    status: 'Претендент №1',
+    status: 'Экс-чемпион UFC · Лёгчайший вес',
     videos: [
-      { title: 'Бой за чемпионский пояс 2023', date: '10 Дек 2023', duration: '25:00' },
+      { title: 'Petr Yan vs Jose Aldo — UFC 251', date: '11 Июл 2020', duration: '18:00' },
+      { title: 'Petr Yan vs Cody Garbrandt — UFC 273', date: '9 Апр 2022', duration: '5:00' },
     ],
   },
   {
     id: 4,
-    name: 'Сергей Орлов',
-    nickname: '"Стальной"',
+    name: 'Зубайра Тухугов',
+    nickname: '"The Chechen Eagle"',
     weightClass: 'Лёгкий вес',
-    record: { wins: 11, losses: 5, draws: 1 },
-    nationality: '🇷🇺 Россия',
-    age: 26,
-    height: '173 см',
+    record: { wins: 20, losses: 4, draws: 0 },
+    nationality: '🇷🇺 Чечня, Россия',
+    age: 33,
+    height: '178 см',
     weight: '70 кг',
-    reach: '178 см',
+    reach: '183 см',
     stance: 'Ортодокс',
-    bio: 'Молодой и перспективный боец из Санкт-Петербурга. Специализируется на борьбе и болевых приёмах. Ежегодно прогрессирует и считается одним из главных талантов лёгкого веса.',
-    wins_by: { ko: 3, sub: 6, dec: 2 },
-    losses_by: { ko: 2, sub: 1, dec: 2 },
+    bio: 'Зубайра Тухугов — чеченский боец UFC, тренирующийся в команде Хабиба Нурмагомедова. Известен агрессивным стилем и мощными ударами. Участник UFC Fight Night и UFC on ESPN. Представляет Чеченскую Республику на мировой арене смешанных единоборств.',
+    wins_by: { ko: 9, sub: 5, dec: 6 },
+    losses_by: { ko: 1, sub: 0, dec: 3 },
     img: FIGHTER2_IMG,
-    rank: 5,
-    status: 'Рейтинговый боец',
-    videos: [],
+    rank: 12,
+    status: 'Боец UFC · Лёгкий вес',
+    videos: [
+      { title: 'Zubaira Tukhugov Highlights 2023', date: '2023', duration: '5:30' },
+    ],
+  },
+  {
+    id: 5,
+    name: 'Умар Нурмагомедов',
+    nickname: '"The Untouchable"',
+    weightClass: 'Лёгчайший вес',
+    record: { wins: 18, losses: 0, draws: 0 },
+    nationality: '🇷🇺 Дагестан, Россия',
+    age: 27,
+    height: '170 см',
+    weight: '61 кг',
+    reach: '173 см',
+    stance: 'Ортодокс',
+    bio: 'Умар Нурмагомедов — двоюродный брат Хабиба и один из самых перспективных бойцов UFC. Непобеждённый профессионал с 18 победами подряд. Обладает семейной борцовской школой и совмещает её с жёсткими ударами. Быстро движется к титулу в лёгчайшем весе.',
+    wins_by: { ko: 5, sub: 8, dec: 5 },
+    losses_by: { ko: 0, sub: 0, dec: 0 },
+    img: FIGHTER1_IMG,
+    rank: 4,
+    status: 'Претендент · Лёгчайший вес',
+    videos: [
+      { title: 'Umar Nurmagomedov vs Cody Stamann', date: '2022', duration: '7:00' },
+      { title: 'Umar Nurmagomedov Highlights 2024', date: '2024', duration: '6:15' },
+    ],
+  },
+  {
+    id: 6,
+    name: 'Магомед Анкалаев',
+    nickname: '"Ankalaev"',
+    weightClass: 'Полутяжёлый вес',
+    record: { wins: 20, losses: 1, draws: 1 },
+    nationality: '🇷🇺 Дагестан, Россия',
+    age: 31,
+    height: '188 см',
+    weight: '93 кг',
+    reach: '193 см',
+    stance: 'Ортодокс',
+    bio: 'Магомед Анкалаев — дагестанский боец UFC, претендент на чемпионский пояс в полутяжёлом весе. Мощный и технически оснащённый боец с сокрушительным нокаутирующим ударом. Сыграл вничью с Яном Блахович в бою за вакантный титул в 2022 году. Один из лучших в своём дивизионе.',
+    wins_by: { ko: 11, sub: 3, dec: 6 },
+    losses_by: { ko: 1, sub: 0, dec: 0 },
+    img: FIGHTER2_IMG,
+    rank: 2,
+    status: 'Претендент #1 · Полутяжёлый вес',
+    videos: [
+      { title: 'Ankalaev vs Blachowicz — UFC 282 (Title Fight)', date: '10 Дек 2022', duration: '25:00' },
+      { title: 'Magomed Ankalaev Highlights 2023', date: '2023', duration: '7:45' },
+    ],
+  },
+  {
+    id: 7,
+    name: 'Алибек Дзиттинов',
+    nickname: '"Lion Heart"',
+    weightClass: 'Средний вес',
+    record: { wins: 14, losses: 0, draws: 0 },
+    nationality: '🇷🇺 Чечня, Россия',
+    age: 26,
+    height: '183 см',
+    weight: '84 кг',
+    reach: '190 см',
+    stance: 'Ортодокс',
+    bio: 'Алибек Дзиттинов — непобеждённый чеченский боец UFC в среднем весе. Ворвался в организацию как один из самых талантливых молодых бойцов. Побеждает оппонентов сочетанием мощной борьбы и точных ударов. Имя Дзиттинова уже связывают с будущим чемпионством.',
+    wins_by: { ko: 6, sub: 5, dec: 3 },
+    losses_by: { ko: 0, sub: 0, dec: 0 },
+    img: FIGHTER1_IMG,
+    rank: 8,
+    status: 'Боец UFC · Средний вес',
+    videos: [
+      { title: 'Alibek Dzitiev Highlights 2024', date: '2024', duration: '5:00' },
+    ],
+  },
+  {
+    id: 8,
+    name: 'Максим Гришин',
+    nickname: '"Max"',
+    weightClass: 'Полутяжёлый вес',
+    record: { wins: 27, losses: 9, draws: 1 },
+    nationality: '🇷🇺 Москва, Россия',
+    age: 40,
+    height: '185 см',
+    weight: '93 кг',
+    reach: '193 см',
+    stance: 'Ортодокс',
+    bio: 'Максим Гришин — ветеран ММА из Москвы с более чем 15-летней карьерой. Прошёл путь через множество организаций и добрался до UFC. Знаменит жёсткими лоу-киками и разнообразным арсеналом техник. Бойцовская легенда российского ММА.',
+    wins_by: { ko: 12, sub: 6, dec: 9 },
+    losses_by: { ko: 4, sub: 1, dec: 4 },
+    img: FIGHTER2_IMG,
+    rank: 15,
+    status: 'Ветеран UFC · Полутяжёлый вес',
+    videos: [
+      { title: 'Maxim Grishin vs Ion Cutelaba — UFC Fight Night', date: '2021', duration: '12:30' },
+    ],
   },
 ];
 
 const news = [
   {
     id: 1,
-    title: 'Громов защитил титул в главном событии Fight Night 12',
-    date: '14 мая 2026',
+    title: 'Ислам Махачев успешно защитил пояс UFC против Дастина Порье',
+    date: '12 апр 2025',
     category: 'Результаты',
-    excerpt: 'Действующий чемпион Алексей Громов успешно защитил пояс, победив Петрова нокаутом в первом раунде.',
+    excerpt: 'Дагестанский чемпион в очередной раз подтвердил статус лучшего бойца мира, доминировав пять раундов и победив решением судей.',
     img: HERO_IMG,
   },
   {
     id: 2,
-    title: 'Анонс турнира: Fight League Summer Championship 2026',
-    date: '10 мая 2026',
-    category: 'Анонсы',
-    excerpt: 'Организаторы объявили дату и место проведения главного летнего турнира. Ожидается более 5000 зрителей.',
+    title: 'Умар Нурмагомедов — следующий претендент на титул в лёгчайшем весе?',
+    date: '5 апр 2025',
+    category: 'Анализ',
+    excerpt: 'После 18 побед подряд UFC должны поставить Умара в бой за пояс. Эксперты обсуждают возможное противостояние с Шоном О\'Мэлли.',
     img: FIGHTER1_IMG,
   },
   {
     id: 3,
-    title: 'Волков вошёл в топ-3 рейтинга полутяжёлого веса',
-    date: '5 мая 2026',
-    category: 'Рейтинги',
-    excerpt: 'После победы над Симоновым Максим Волков поднялся в официальном рейтинге организации.',
+    title: 'Магомед Анкалаев возвращается — бой назначен на лето 2025',
+    date: '28 мар 2025',
+    category: 'Анонсы',
+    excerpt: 'Дагестанский претендент #1 полутяжёлого веса выйдет на октагон после годичного перерыва. Соперник пока не объявлен.',
     img: FIGHTER2_IMG,
   },
 ];
 
 const galleryImages = [
-  { id: 1, img: HERO_IMG, caption: 'Fight Night 12 — Главное событие' },
-  { id: 2, img: FIGHTER1_IMG, caption: 'Громов — тренировочный лагерь' },
-  { id: 3, img: FIGHTER2_IMG, caption: 'Волков перед боем' },
-  { id: 4, img: HERO_IMG, caption: 'Октагон — арена чемпионов' },
-  { id: 5, img: FIGHTER1_IMG, caption: 'Пресс-конференция турнира' },
-  { id: 6, img: FIGHTER2_IMG, caption: 'Взвешивание Fight Night 12' },
+  { id: 1, img: HERO_IMG, caption: 'UFC — Арена чемпионов' },
+  { id: 2, img: FIGHTER1_IMG, caption: 'Ислам Махачев — тренировочный лагерь' },
+  { id: 3, img: FIGHTER2_IMG, caption: 'Хабиб Нурмагомедов — легенда UFC' },
+  { id: 4, img: HERO_IMG, caption: 'UFC Октагон — место легенд' },
+  { id: 5, img: FIGHTER1_IMG, caption: 'Пётр Ян — взвешивание' },
+  { id: 6, img: FIGHTER2_IMG, caption: 'Анкалаев — пресс-конференция' },
 ];
 
-const weightClasses = ['Все категории', 'Тяжёлый вес', 'Полутяжёлый вес', 'Средний вес', 'Лёгкий вес'];
+const weightClasses = ['Все категории', 'Лёгкий вес', 'Лёгчайший вес', 'Средний вес', 'Полутяжёлый вес'];
 
 type Section = 'home' | 'fighters' | 'stats' | 'news' | 'gallery';
 
@@ -170,10 +264,10 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
           <button onClick={() => navigate('home')} className="flex items-center gap-2 group">
             <div className="w-8 h-8 bg-[#c0392b] flex items-center justify-center">
-              <span className="font-oswald font-bold text-white text-sm">FL</span>
+              <span className="font-oswald font-bold text-white text-sm">UFC</span>
             </div>
             <span className="font-oswald font-bold text-xl tracking-widest text-white group-hover:text-[#e74c3c] transition-colors">
-              FIGHT LEAGUE
+              UFC · РУС БОЙЦЫ
             </span>
           </button>
 
@@ -229,13 +323,13 @@ const Index = () => {
 
               <div className="relative max-w-7xl mx-auto px-4 animate-slide-up">
                 <div className="inline-block bg-[#c0392b] px-3 py-1 mb-4">
-                  <span className="font-roboto-condensed font-bold text-xs tracking-[0.3em] uppercase">Профессиональные бои ММА</span>
+                  <span className="font-roboto-condensed font-bold text-xs tracking-[0.3em] uppercase">UFC · Россия и Кавказ</span>
                 </div>
                 <h1 className="font-oswald text-6xl md:text-9xl font-bold leading-none mb-2 tracking-tight">
-                  FIGHT<br /><span className="text-[#c0392b]">LEAGUE</span>
+                  НАШИ<br /><span className="text-[#c0392b]">В UFC</span>
                 </h1>
                 <p className="font-roboto text-gray-300 text-lg md:text-xl max-w-xl mb-8 leading-relaxed">
-                  Лучшие бойцы. Захватывающие поединки.<br />Официальная статистика и биографии.
+                  Бойцы из России и Кавказа в UFC.<br />Биографии, рекорды и видео боёв.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <button
@@ -256,10 +350,10 @@ const Index = () => {
               <div className="absolute bottom-0 left-0 right-0 bg-black/80 border-t border-[#c0392b]/30">
                 <div className="max-w-7xl mx-auto px-4 py-4 grid grid-cols-2 md:grid-cols-4 gap-4">
                   {[
-                    { label: 'Бойцов в реестре', value: '48' },
-                    { label: 'Проведено боёв', value: '214' },
-                    { label: 'Чемпионов', value: '6' },
-                    { label: 'Лет в спорте', value: '12' },
+                    { label: 'Бойцов в каталоге', value: '8' },
+                    { label: 'Чемпионов UFC', value: '2' },
+                    { label: 'Непобеждённых', value: '2' },
+                    { label: 'Титульных боёв', value: '9' },
                   ].map(stat => (
                     <div key={stat.label} className="text-center">
                       <div className="font-oswald text-3xl font-bold text-[#c0392b]">{stat.value}</div>
@@ -732,11 +826,11 @@ const Index = () => {
             <div>
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-8 h-8 bg-[#c0392b] flex items-center justify-center">
-                  <span className="font-oswald font-bold text-white text-sm">FL</span>
+                  <span className="font-oswald font-bold text-white text-sm">UFC</span>
                 </div>
-                <span className="font-oswald font-bold text-xl tracking-widest">FIGHT LEAGUE</span>
+                <span className="font-oswald font-bold text-xl tracking-widest">UFC · РУС БОЙЦЫ</span>
               </div>
-              <p className="font-roboto text-gray-600 text-sm">Профессиональные бои ММА</p>
+              <p className="font-roboto text-gray-600 text-sm">Бойцы из России и Кавказа в UFC</p>
             </div>
             <div className="flex flex-wrap gap-6">
               {navItems.map(item => (
@@ -751,7 +845,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-white/5 mt-8 pt-6 text-center text-gray-700 font-roboto text-xs">
-            © 2026 Fight League. Все права защищены.
+            © 2026 UFC · Бойцы из России и Кавказа. Информационный каталог.
           </div>
         </div>
       </footer>
